@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Redstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<section class="sub-header">
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+               <a href="cart.html"> <img src="./images/cart.png" width="30px" height="30px"></a>
+                <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+        <h1 class="head">Contact Us</h1>
+    </div>
+</section>
+
+<!----Contact Us-->
+<section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d253650.13673837265!2d3.1491842!3d6.6116684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b90f822ed2e0b%3A0xb7ce5b0c8724b090!2sMosan%20Okunola%20Local%20Council%20Development%20Area%20(LCDA)!5e0!3m2!1sen!2sng!4v1660284425495!5m2!1sen!2sng" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="contact-row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>12, Anthony Road, Iju Ishaga Bus-Stop</h5>
+                    <p>Lagos, Nigeria.</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+234 8100145973</h5>
+                    <p>Monday to Saturday, 10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>info@abdusomod123.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-hander.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<!-----Footer----->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-co-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS Mobile phone.</p>
+                <div class="app-logo">
+                    <img src="./images/play-store.png">
+                    <img src="./images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-co-2">
+               <img src="./images/logo-white.png">
+                <p>Our Purpose Is To Sustainably Make The Pleasure and Benefit 
+                    Of Sports Accessible To The Many.
+                </p>
+            </div>
+            <div class="footer-co-3">
+                    <h3>Useful Links</h3>
+                 <ul>
+                    <li>Coupon</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                 </ul>
+            </div>
+            <div class="footer-co-4">
+                <h3>Follow Us</h3>
+                 <ul>
+                    <a href="https://www.facebook.com/abdussomod.abdulfatah">Facebook</a><br>
+                    <a href="https://twitter.com/Abdus_samod">Twitter</a><br>
+                     <a href="https://www.instagram.com/abdus_somod">Instagram</a><br>
+                    <a href="https://www.linkedin.com/in/abdul-samod-abdul-fatai-770222237">linkedin</a> <br>
+                    <a href="https://api.whatsapp.com/send?phone=2348100145973">WhatsApp</a> <br>
+                    <a href="https://github.com/Abdus_somod"> GitHub</a><br>
+                    <a href="https://t.me/Abdus_somod"> Telegram</a>
+                 </ul>
+             </div>
+             
+        </div>
+        <hr>
+        <p class="cr">Copyright - 2022 Abdus_somod</p>
+    </div>
+ </div>
+
+
+
+ <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+ </script>
+
+</body>
+</html>

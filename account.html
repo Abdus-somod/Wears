@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page- Redstore </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+             <a href="index.html"><img src="images/logo.png" alt="" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+           <a href="cart.html"> <img src="./images/cart.png" width="30px" height="30px"></a>
+            <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+ <!-- account page -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="co-2">
+                    <img src="./images/image1.png" width="100%">
+                </div>
+                <div class="co-2">
+                   <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Log in</span>
+                        <span onclick="signin()">Sign in</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="Login">
+                        <input type="text" placeholder="Usernamre">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Log in</button>
+                        <br>
+                        <a href="">Forgot Password</a>
+                    </form>
+                    <form id="Signin">
+                        <input type="text" placeholder="Usernamre">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Sign in</button>
+                    </form>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-----footer-->
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-co-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS Mobile phone.</p>
+                <div class="app-logo">
+                    <img src="./images/play-store.png">
+                    <img src="./images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-co-2">
+               <img src="./images/logo-white.png">
+                <p>Our Purpose Is To Sustainably Make The Pleasure and Benefit 
+                    Of Sports Accessible To The Many.
+                </p>
+            </div>
+            <div class="footer-co-3">
+                    <h3>Useful Links</h3>
+                 <ul>
+                    <li>Coupon</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                 </ul>
+            </div>
+            <div class="footer-co-4">
+                <h3>Follow Us</h3>
+                 <ul>
+                    <a href="https://www.facebook.com/abdussomod.abdulfatah">Facebook</a><br>
+                    <a href="https://twitter.com/Abdus_samod">Twitter</a><br>
+                     <a href="https://www.instagram.com/abdus_somod">Instagram</a><br>
+                    <a href="https://www.linkedin.com/in/abdul-samod-abdul-fatai-770222237">linkedin</a> <br>
+                    <a href="https://api.whatsapp.com/send?phone=2348100145973">WhatsApp</a> <br>
+                    <a href="https://github.com/Abdus_somod"> GitHub</a><br>
+                    <a href="https://t.me/Abdus_somod"> Telegram</a>
+                 </ul>
+             </div>
+             
+        </div>
+        <hr>
+        <p class="cr">Copyright - 2022 Abdus_somod</p>
+    </div>
+ </div>
+
+
+
+ <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px"
+        }
+    };
+
+ </script>
+ <script>
+    var Login = document.getElementById("Login")
+    var Signin = document.getElementById("Signin")
+    var Indicator = document.getElementById("Indicator")
+
+    function signin()
+    {
+        Signin.style.transform = "translateX(0px)";
+        Login.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+
+    function login()
+    {
+        Signin.style.transform = "translateX(300px)";
+        Login.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+ </script>
+
+</body>
+</html>
